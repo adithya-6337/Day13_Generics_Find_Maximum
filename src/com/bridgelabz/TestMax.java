@@ -21,4 +21,14 @@ public class TestMax {
         }
         return maxValue;
     }
+    public static String maxString(String x, String y, String z) {
+        String maxValue = x;
+        if (y.compareTo(maxValue) > 0) {
+            maxValue = y;
+        }
+        if (z.compareTo(maxValue) > 0) {
+            maxValue = z;
+        }
+        return maxValue;
+    }
 }

@@ -7,5 +7,8 @@ public class Main {
 
         float floatValue = TestMax.maxFloat(10.5f, 20.01f, 30.9f);
         System.out.println("Maximum value in float is : " + floatValue);
+
+        String stringValue = TestMax.maxString("Apple", "Peach", "Banana");
+        System.out.println("Maximum value in float is : " + stringValue);
     }
 }
