@@ -1,14 +1,18 @@
 package com.bridgelabz;
 
 public class Main {
+
     public static void main(String[] args) {
-        int intValue = TestMax.maxInt(20, 70, 60);
-        System.out.println("Maximum value in integer is : " + intValue);
+        TestMax<Integer> integerTestMax = new TestMax<>();
+        int intValue = integerTestMax.maxValue(2, 5, 7);
+        System.out.println("Maximum value in integer : " + intValue);
 
-        float floatValue = TestMax.maxFloat(10.5f, 20.01f, 30.9f);
-        System.out.println("Maximum value in float is : " + floatValue);
+        TestMax<Float> floatTestMax = new TestMax<>();
+        float floatValue = floatTestMax.maxValue(2.3f, 4.5f, 9.99f);
+        System.out.println("Maximum value in float : " + floatValue);
 
-        String stringValue = TestMax.maxString("Apple", "Peach", "Banana");
-        System.out.println("Maximum value in float is : " + stringValue);
+        TestMax<String> stringTestMax = new TestMax<>();
+        String stringValue = stringTestMax.maxValue("Apple", "Peach", "Banana");
+        System.out.println("Maximum value in string : " + stringValue);
     }
 }
